@@ -9,7 +9,7 @@ fetch('https://api.frankfurter.app/currencies')
 function dropdown(res) {
   let curr = Object.entries(res);
   for (let i = 0; i < curr.length; i++) {
-    let opt = `<option value="${curr[i][0]}">${curr[i][0]}</option>`;
+    let opt = `<option value="${curr[i][0]}">${curr[i]}</option>`;
     select[0].innerHTML += opt;
     select[1].innerHTML += opt;
   }
